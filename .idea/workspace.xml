@@ -7,28 +7,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="253df116-3a61-4c71-bc58-ab9dcd60d38b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Configuration/WebXMLConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Configuration/WebXMLConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Configuration/WebConfigInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Configuration/WebConfigInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Controller/BlogFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Controller/BlogFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addYourBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addYourBlog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blogAdded.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blogAdded.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/DeleteBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/DeleteBlog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/DisplayBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/DisplayBlog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/BlogService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/BlogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/BlogRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/JpaConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/JpaConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/WebConfigInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/WebConfigInitializer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/WebXMLConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/WebXMLConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/BlogFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/BlogFormController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/CustomerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/addYourBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/addYourBlog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/blogAdded.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/blogAdded.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Model/BlogModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Model/BlogModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/DeleteBlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/DeleteBlog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/Interface/DeleteBlogInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/Interface/DeleteBlogInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/Interface/RetrieveInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/Interface/RetrieveInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/Interface/SaveBlogInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/Interface/SaveBlogInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/Interface/UpdateBlogInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/Interface/UpdateBlogInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/PersistBlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/PersistBlog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/RetrieveBlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/RetrieveBlog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/UpdateBlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/ServiceLayer/UpdateBlog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/DisplayBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/DisplayBlog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/BlogService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Configuration/BlogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Configuration/BlogRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Configuration/JpaConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Configuration/JpaConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Configuration/WebConfigInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Configuration/WebConfigInitializer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/JPA/Configuration/WebXMLConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Configuration/WebXMLConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/JPA/Controller/BlogFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Controller/BlogFormController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/JPA/Controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JPA/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Model/BlogModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Model/BlogModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/DeleteBlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/DeleteBlog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/Interface/DeleteBlogInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/Interface/DeleteBlogInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/Interface/RetrieveInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/Interface/RetrieveInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/Interface/SaveBlogInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/Interface/SaveBlogInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/Interface/UpdateBlogInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/Interface/UpdateBlogInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/PersistBlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/PersistBlog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/RetrieveBlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/RetrieveBlog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/UpdateBlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/ServiceLayer/UpdateBlog.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +247,7 @@
       <updated>1577171493057</updated>
       <workItem from="1577171498111" duration="2938000" />
       <workItem from="1577187173048" duration="4256000" />
-      <workItem from="1577203861504" duration="9400000" />
+      <workItem from="1577203861504" duration="10513000" />
     </task>
     <servers />
   </component>

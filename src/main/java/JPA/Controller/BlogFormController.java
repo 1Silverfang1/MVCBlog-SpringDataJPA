@@ -32,28 +32,24 @@ public class BlogFormController {
 
         }
 
-//    @RequestMapping(value = "/delete/{BlogId}",method = RequestMethod.GET)
-//    public ModelAndView deletedBlog(@PathVariable("BlogId") String blogId)
-//    {
-////        System.out.println(blogId+"sdvvvvvvvv");
-//        ModelAndView modelAndView= new ModelAndView();
-//        modelAndView.setViewName("DeleteBlog");
-//        ApplicationContext applicationContext= new AnnotationConfigApplicationContext(ApplicationContextConfig.class);
-//     //   RetrieveInterface retrieveSingleBlog = applicationContext.getBean(RetrieveBlog.class);
-//      //  modelAndView.addObject("BlogObject",retrieveSingleBlog.getMyBlog(Integer.parseInt(blogId)));
-//        return  modelAndView;
-//    }
-//    @RequestMapping(value = "/delete/Confirm",method = RequestMethod.POST)
-//    public ModelAndView deletedConfirmBlog(@RequestParam("blogId") String id)
-//    {
-//
-//        ApplicationContext applicationContext= new AnnotationConfigApplicationContext(ApplicationContextConfig.class);
-//        DeleteBlogInterface Blog= applicationContext.getBean(DeleteBlog.class);
-//        Blog.deleteBlog(Integer.parseInt(id));
-//        ModelAndView modelAndView= new ModelAndView();
-//        modelAndView.setViewName("dataDeleted");
-//        return modelAndView;
-//    }
+    @RequestMapping(value = "/delete/{BlogId}",method = RequestMethod.GET)
+    public ModelAndView deletedBlog(@PathVariable("BlogId") String blogId)
+    {
+        ModelAndView modelAndView= new ModelAndView();
+        modelAndView.setViewName("DeleteBlog");
+        BlogModel blogObject= blogService.viewBlog(Integer.parseInt(blogId)).get();
+        modelAndView.addObject("BlogObject",blogObject);
+        return  modelAndView;
+    }
+    @RequestMapping(value = "/delete/Confirm",method = RequestMethod.POST)
+    public ModelAndView deletedConfirmBlog(@RequestParam("blogId") String id)
+    {
+
+
+        ModelAndView modelAndView= new ModelAndView();
+        modelAndView.setViewName("dataDeleted");
+        return modelAndView;
+    }
 //
 //    @RequestMapping(value = "/update/{BlogId}",method = RequestMethod.GET)
 //    public ModelAndView updateBlog(@PathVariable("BlogId") String id)
@@ -81,18 +77,18 @@ public class BlogFormController {
 //        modelAndView.setViewName("DataSucess");
 //        return modelAndView;
 //    }
-//    @RequestMapping(value = "/view/{BlogId}",method = RequestMethod.GET)
-//    public ModelAndView showMyblog(@PathVariable("BlogId") String id)
-//    {
-//        ApplicationContext applicationContext= new AnnotationConfigApplicationContext(ApplicationContextConfig.class);
-//        int blogid = Integer.parseInt(id);
-//        RetrieveInterface retrieveSingleBlog= applicationContext.getBean(RetrieveBlog.class);
-//        BlogModel blogModel=retrieveSingleBlog.getMyBlog(blogid);
-//        ModelAndView modelAndView=new ModelAndView();
-//        modelAndView.addObject("ViewBlog",blogModel);
-//        modelAndView.setViewName("DisplayBlog");
-//        return modelAndView;
-//    }
+    @RequestMapping(value = "/view/{BlogId}",method = RequestMethod.GET)
+    public ModelAndView showMyblog(@PathVariable("BlogId") String id)
+    {
+
+        int blogid = Integer.parseInt(id);
+
+        BlogModel blogModel=blogService.viewBlog(blogid).get();
+        ModelAndView modelAndView=new ModelAndView();
+        modelAndView.addObject("ViewBlog",blogModel);
+        modelAndView.setViewName("DisplayBlog");
+        return modelAndView;
+    }
 
 
 }

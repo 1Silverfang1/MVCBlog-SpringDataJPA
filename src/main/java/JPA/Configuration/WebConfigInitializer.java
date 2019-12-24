@@ -17,4 +17,4 @@ public class WebConfigInitializer implements WebApplicationInitializer {
         springDispatcher.setLoadOnStartup(1);
         springDispatcher.addMapping("/");
     }
-}
+} 
