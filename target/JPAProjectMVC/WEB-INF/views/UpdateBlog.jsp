@@ -1,4 +1,3 @@
-<%@ page import="SpringMVC.Model.BlogModel" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="input" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="textarea" uri="http://www.springframework.org/tags/form" %>
@@ -16,7 +15,8 @@
 </head>
 <body>
  <h2>Update your Blog Here</h2>
-<form:form action="/SpringMVCBlog_war_exploded/post/updateConfirm" modelAttribute="BlogObject" method="post" >
+<%--@elvariable id="BlogObject" type="JPA.Model.BlogModel"--%>
+<form:form action="/JPAProjectMVC_war_exploded/post/updateConfirm" modelAttribute="BlogObject" method="post" >
 <form:input path="authorName"></form:input>
     <form:input path="blogTitle"></form:input>
 <%--    <form:input path="blogPost"></form:input>--%>

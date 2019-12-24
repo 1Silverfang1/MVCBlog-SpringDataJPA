@@ -45,44 +45,38 @@ public class BlogFormController {
     public ModelAndView deletedConfirmBlog(@RequestParam("blogId") String id)
     {
 
-
+        String result= blogService.deleteThisBlog(Integer.parseInt(id));
         ModelAndView modelAndView= new ModelAndView();
         modelAndView.setViewName("dataDeleted");
+        modelAndView.addObject("result",result);
         return modelAndView;
     }
-//
-//    @RequestMapping(value = "/update/{BlogId}",method = RequestMethod.GET)
-//    public ModelAndView updateBlog(@PathVariable("BlogId") String id)
-//    {
-//        int blogId = Integer.parseInt(id);
-//        ApplicationContext applicationContext= new AnnotationConfigApplicationContext(ApplicationContextConfig.class);
-//        RetrieveInterface retrieveSingleBlog = applicationContext.getBean(RetrieveBlog.class);
-//        ModelAndView modelAndView= new ModelAndView();
-//        modelAndView.addObject("BlogObject",retrieveSingleBlog.getMyBlog(blogId));
-////        System.out.println(request.getParameter("BlogId")+"svd");
-//        modelAndView.addObject("BlogId",id);
-//        modelAndView.setViewName("UpdateBlog");
-//        return  modelAndView;
-//    }
-//    @RequestMapping(value = "updateConfirm",method = RequestMethod.POST)
-//    public ModelAndView updatemyBlog(@ModelAttribute BlogModel blogModel)
-//    {
-//        System.out.println(blogModel);
-//        ModelAndView modelAndView= new ModelAndView();
-//        ApplicationContext applicationContext= new AnnotationConfigApplicationContext(ApplicationContextConfig.class);
-//        UpdateBlogInterface updateBlog= applicationContext.getBean(UpdateBlog.class);
-//        updateBlog.updateMyblog(blogModel);
-//        RetrieveInterface retrieveBlog= applicationContext.getBean(RetrieveBlog.class);
-//        modelAndView.addObject("BlogData",retrieveBlog.getBlogData());
-//        modelAndView.setViewName("DataSucess");
-//        return modelAndView;
-//    }
+
+    @RequestMapping(value = "/update/{BlogId}",method = RequestMethod.GET)
+    public ModelAndView updateBlog(@PathVariable("BlogId") String id)
+    {
+        int blogId = Integer.parseInt(id);
+        ModelAndView modelAndView= new ModelAndView();
+        BlogModel blogModel= blogService.viewBlog(blogId).get();
+        modelAndView.addObject("BlogObject",blogModel);
+        modelAndView.addObject("BlogId",id);
+        modelAndView.setViewName("UpdateBlog");
+        return  modelAndView;
+    }
+    @RequestMapping(value = "updateConfirm",method = RequestMethod.POST)
+    public ModelAndView updatemyBlog(@ModelAttribute BlogModel blogModel)
+    {
+        System.out.println(blogModel);
+       ModelAndView modelAndView= new ModelAndView();
+       String result=blogService.saveMyblog(blogModel);
+        modelAndView.addObject("BlogData",result);
+        modelAndView.setViewName("DataSucess");
+        return modelAndView;
+    }
     @RequestMapping(value = "/view/{BlogId}",method = RequestMethod.GET)
     public ModelAndView showMyblog(@PathVariable("BlogId") String id)
     {
-
         int blogid = Integer.parseInt(id);
-
         BlogModel blogModel=blogService.viewBlog(blogid).get();
         ModelAndView modelAndView=new ModelAndView();
         modelAndView.addObject("ViewBlog",blogModel);

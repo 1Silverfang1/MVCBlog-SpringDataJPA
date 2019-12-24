@@ -23,7 +23,7 @@ BlogModel curBlog = (BlogModel)request.getAttribute("BlogObject");%>
 <hr>
 <p><%=curBlog.getBlogPost()%></p>
 <hr>
-<form action="./delete/Confirm" method="post">
+<form action="./Confirm" method="post">
     <input type="hidden" value="<%=curBlog.getId()%>" name="blogId">
     <input type="submit" value="delete">
 </form>

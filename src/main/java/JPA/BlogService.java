@@ -26,5 +26,13 @@ public class BlogService {
     {
         return blogRepository.findById(id);
     }
+    public String deleteThisBlog(int id)
+    {
+        blogRepository.deleteById(id);
+        return "Blog deleted successfully";
+    }
+//    public String updateMyBlog(BlogModel blogModel){
+//        blogRepository.
+//    }
 
 }

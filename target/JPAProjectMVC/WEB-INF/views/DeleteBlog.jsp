@@ -1,5 +1,6 @@
+<%@ page import="JPA.Model.BlogModel" %>
 <%@ taglib prefix="input" uri="http://www.springframework.org/tags/form" %>
-<%@ page import="SpringMVC.Model.BlogModel" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: root
   Date: 20/12/19
@@ -22,7 +23,7 @@ BlogModel curBlog = (BlogModel)request.getAttribute("BlogObject");%>
 <hr>
 <p><%=curBlog.getBlogPost()%></p>
 <hr>
-<form action="/SpringMVCBlog_war_exploded/post/delete/Confirm" method="post">
+<form action="./Confirm" method="post">
     <input type="hidden" value="<%=curBlog.getId()%>" name="blogId">
     <input type="submit" value="delete">
 </form>
