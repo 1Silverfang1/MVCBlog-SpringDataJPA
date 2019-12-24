@@ -11,8 +11,9 @@
     <title>Blog added</title>
 </head>
 <body>
-<p>Your Blog has been posted!!!!! </p>
-<a href="/SpringMVCBlog_war_exploded/post/create">Click here to add Form</a>
-<a href="/SpringMVCBlog_war_exploded/">Click here for Homepage</a>
+<p>Your Blog has been posted!!!</p>
+${processResult}
+<a href="../post/create">Click here to add Form</a>
+<a href="../">Click here for Homepage</a>
 </body>
 </html>

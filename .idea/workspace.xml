@@ -6,7 +6,30 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="253df116-3a61-4c71-bc58-ab9dcd60d38b" name="Default Changelist" comment="" />
+    <list default="true" id="253df116-3a61-4c71-bc58-ab9dcd60d38b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Configuration/WebXMLConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Configuration/WebXMLConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Controller/BlogFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Controller/BlogFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addYourBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addYourBlog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blogAdded.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blogAdded.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/WebXMLConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/WebXMLConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/BlogFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/BlogFormController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/addYourBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/addYourBlog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/blogAdded.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/blogAdded.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Configuration/WebXMLConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Configuration/WebXMLConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Controller/BlogFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Controller/BlogFormController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JPA/CustomerService.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +68,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -60,8 +86,10 @@
     </option>
   </component>
   <component name="ProjectId" id="1VQ3SkbTFV0D8mQVvFbcyirgNoX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
@@ -201,11 +229,22 @@
       <updated>1577171493057</updated>
       <workItem from="1577171498111" duration="2938000" />
       <workItem from="1577187173048" duration="4256000" />
-      <workItem from="1577203861504" duration="6866000" />
+      <workItem from="1577203861504" duration="9400000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

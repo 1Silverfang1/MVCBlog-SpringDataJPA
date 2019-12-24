@@ -20,10 +20,6 @@ All the Form Submitted data will be shown here.
     for(BlogModel curBlog: result)
     {
 %>
-<%--<form method="get" action="post/view">--%>
-<%--<h2><input style="text-align:center;background: none;border: none;font-size: larger;cursor: pointer" type="submit" value="<%=curBlog.getBlogTitle()%>"></h2>--%>
-<%--    <input type="hidden" value="<%=curBlog.getId()%>" name="BlogId">--%>
-<%--</form>--%>
 <h2><a href="post/view/<%=curBlog.getId()%>"><%=curBlog.getAuthorName()%></a></h2>
 <h3><%=curBlog.getAuthorName()%></h3>
 <% String blog = curBlog.getBlogPost();
@@ -39,11 +35,10 @@ else
 %>
 <p><%=blogExcrept%></p>
 <form action="post/delete/<%=curBlog.getId()%>"  method="get">
-<%--    <input type="hidden" value="<%=curBlog.getId()%>" name="BlogId">--%>
+
     <input type="submit" value="Delete">
 </form>
 <form action="post/update/<%=curBlog.getId()%>" method="get">
-<%--    <input type="hidden" value="<%=curBlog.getId()%>" name="BlogId">--%>
     <input type="submit" value="Edit">
 </form>
 <hr>

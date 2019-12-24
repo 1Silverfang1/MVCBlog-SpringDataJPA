@@ -1,6 +1,6 @@
 package JPA.Controller;
 
-import JPA.CustomerService;
+import JPA.BlogService;
 import JPA.Model.BlogModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,14 +13,15 @@ import java.util.List;
 @Controller
 public class HomeController {
     @Autowired
-    private CustomerService customerService;
+    private BlogService blogService;
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public ModelAndView getMyHomePage()
     {
-        ModelAndView modelAndView = new ModelAndView("index");
-        List<BlogModel> resultList= customerService.getAllBlog();
+        ModelAndView modelAndView = new ModelAndView();
+        List<BlogModel> resultList= blogService.getAllBlog();
         modelAndView.addObject("result",resultList);
         modelAndView.addObject("BlogData",resultList);
+        modelAndView.setViewName("index");
         return modelAndView;
     }
 }

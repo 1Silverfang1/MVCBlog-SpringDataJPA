@@ -8,13 +8,18 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class CustomerService {
+public class BlogService {
     @Autowired
     private BlogRepository blogRepository;
     public List<BlogModel> getAllBlog()
     {
         return (List<BlogModel>) blogRepository.findAll();
 
+    }
+    public String saveMyblog(BlogModel curblog)
+    {
+        blogRepository.save(curblog);
+        return "Blog Saved Successfully";
     }
 
 }

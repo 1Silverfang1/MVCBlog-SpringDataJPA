@@ -1,51 +1,37 @@
 package JPA.Controller;
 
+import JPA.BlogService;
 import JPA.Model.BlogModel;
-import JPA.ServiceLayer.DeleteBlog;
-import JPA.ServiceLayer.Interface.DeleteBlogInterface;
-import JPA.ServiceLayer.Interface.RetrieveInterface;
-import JPA.ServiceLayer.Interface.SaveBlogInterface;
-import JPA.ServiceLayer.Interface.UpdateBlogInterface;
-import JPA.ServiceLayer.RetrieveBlog;
-import JPA.ServiceLayer.UpdateBlog;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-
-import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/post")
 public class BlogFormController {
-//    @RequestMapping(value = "/create",method = RequestMethod.GET)
-//    public String BlogAddForm(Model model)
-//    {
-//        BlogModel blogModel = new BlogModel();
-//        model.addAttribute("BlogModel", blogModel);
-//        return "addYourBlog";
-//    }
-//    @RequestMapping(value = "/create",method = RequestMethod.POST)
-//    public ModelAndView processBlog(@Valid @ModelAttribute("BlogModel") BlogModel blogModel, BindingResult bindingResult) {
-//        if (bindingResult.hasErrors()) {
-//            ModelAndView modelAndView= new ModelAndView();
-//            modelAndView.setViewName("addYourBlog");
-//            return modelAndView;
-//        } else {
-//            ModelAndView modelAndView = new ModelAndView();
-//
-//            ApplicationContext applicationContext= new AnnotationConfigApplicationContext(ApplicationContextConfig.class);
-//            SaveBlogInterface PersistBlog = applicationContext.getBean(PersistBlog.class);
-//            String result = PersistBlog.addThis(blogModel);
-//            modelAndView.setViewName("blogAdded");
-//            modelAndView.addObject("processResult",result);
-//            return modelAndView;
-//
-//        }
-//    }
+    @Autowired
+    private BlogService blogService;
+    @RequestMapping(value = "/create",method = RequestMethod.GET)
+    public String BlogAddForm(Model model)
+    {
+        BlogModel blogModel = new BlogModel();
+        model.addAttribute("Blogger", blogModel);
+        return "addYourBlog";
+    }
+
+    @RequestMapping(value  = "/create",method = RequestMethod.POST)
+    public ModelAndView processBlog ( @ModelAttribute("Blogger") BlogModel blogModel) {
+            ModelAndView modelAndView = new ModelAndView();
+        System.out.println(blogModel);
+        String result=blogService.saveMyblog(blogModel);
+        modelAndView.setViewName("blogAdded");
+          modelAndView.addObject("processResult",result);
+            return modelAndView;
+
+        }
+
 //    @RequestMapping(value = "/delete/{BlogId}",method = RequestMethod.GET)
 //    public ModelAndView deletedBlog(@PathVariable("BlogId") String blogId)
 //    {

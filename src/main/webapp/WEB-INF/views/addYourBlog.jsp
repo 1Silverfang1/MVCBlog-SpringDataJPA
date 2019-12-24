@@ -11,13 +11,12 @@
     </style>
 </head>
 <body>
-<%
-    response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-%>
 <span>
     ${processResult}
 </span>
-<form:form action="/SpringMVCBlog_war_exploded/post/create" modelAttribute="BlogModel" method="post" autocomplete="off">
+
+<%--@elvariable id="Blogger" type="JPA.Model.BlogModel"--%>
+<form:form action="./create" modelAttribute="Blogger" method="post" autocomplete="off">
     Author Name: <form:input path="authorName" autocomplete="false"/>
     <form:errors path="authorName" /> <br>
     Blog Title: <form:input path="blogTitle" autocomplete="false"/>
