@@ -7,23 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="253df116-3a61-4c71-bc58-ab9dcd60d38b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cf21f1c3-6a20-4c16-94eb-67d21429f985.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cf21f1c3-6a20-4c16-94eb-67d21429f985.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JPAProjectMVC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JPAProjectMVC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Configuration/JpaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Configuration/JpaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Configuration/WebConfigInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Configuration/WebConfigInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Controller/BlogFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Controller/BlogFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/DataSucess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/DataSucess.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/DeleteBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/DeleteBlog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/UpdateBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/UpdateBlog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blogAdded.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/blogAdded.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dataDeleted.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dataDeleted.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/BlogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/BlogFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/BlogFormController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/DataSucess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/DataSucess.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/DeleteBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/DeleteBlog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/UpdateBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/UpdateBlog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/blogAdded.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/blogAdded.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/dataDeleted.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/dataDeleted.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JPA/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/BlogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Controller/BlogFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Controller/BlogFormController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/ServiceLayer/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/ServiceLayer/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +217,8 @@
       <updated>1577171493057</updated>
       <workItem from="1577171498111" duration="2938000" />
       <workItem from="1577187173048" duration="4256000" />
-      <workItem from="1577203861504" duration="12044000" />
+      <workItem from="1577203861504" duration="12575000" />
+      <workItem from="1577247789418" duration="830000" />
     </task>
     <servers />
   </component>
@@ -236,7 +230,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

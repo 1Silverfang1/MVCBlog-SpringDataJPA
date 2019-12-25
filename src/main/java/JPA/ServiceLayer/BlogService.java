@@ -1,4 +1,4 @@
-package JPA;
+package JPA.ServiceLayer;
 
 import JPA.Configuration.BlogRepository;
 import JPA.Model.BlogModel;

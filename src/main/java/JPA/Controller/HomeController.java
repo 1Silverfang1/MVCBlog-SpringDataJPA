@@ -1,6 +1,6 @@
 package JPA.Controller;
 
-import JPA.BlogService;
+import JPA.ServiceLayer.BlogService;
 import JPA.Model.BlogModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
