@@ -7,29 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="253df116-3a61-4c71-bc58-ab9dcd60d38b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/JPA/Security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JPA/Security/SecurityWebInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cf21f1c3-6a20-4c16-94eb-67d21429f985.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cf21f1c3-6a20-4c16-94eb-67d21429f985.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Configuration/JpaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Configuration/JpaConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Configuration/WebConfigInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Configuration/FrontControllerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Controller/BlogFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Controller/BlogFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Model/BlogModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Model/BlogModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JPA/Security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/Security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JPA/ServiceLayer/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JPA/ServiceLayer/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/JpaConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/JpaConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Configuration/WebConfigInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/DeleteBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/DeleteBlog.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/BlogFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/BlogFormController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Model/BlogModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/classes/JPA/Model/BlogModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/lib/spring-core-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/lib/spring-jcl-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Configuration/JpaConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Configuration/JpaConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Configuration/WebConfigInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/DeleteBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JPAProjectMVC/WEB-INF/views/DeleteBlog.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/JPA/Controller/BlogFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Controller/BlogFormController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JPA/Model/BlogModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JPA/Model/BlogModel.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,16 +86,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/java/JPA" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="JPA.Security" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="JPA.Model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/java/JPA" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -234,7 +223,7 @@
       <workItem from="1577203861504" duration="12575000" />
       <workItem from="1577247789418" duration="13867000" />
       <workItem from="1577273475224" duration="4270000" />
-      <workItem from="1577333629996" duration="2697000" />
+      <workItem from="1577333629996" duration="9429000" />
     </task>
     <servers />
   </component>

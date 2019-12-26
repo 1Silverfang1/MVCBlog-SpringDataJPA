@@ -4,6 +4,7 @@ import JPA.Configuration.BlogRepository;
 import JPA.Model.BlogModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -26,6 +27,7 @@ public class BlogService implements ServiceInterface {
     {
         return blogRepository.findById(id);
     }
+    @Transactional
     public String deleteThisBlog(int id)
     {
         blogRepository.deleteById(id);

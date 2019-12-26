@@ -17,7 +17,7 @@ import javax.validation.Valid;
 public class BlogFormController {
     @Autowired
     private ServiceInterface blogService;
-    @RequestMapping(value = "/create",method = RequestMethod.GET)
+    @GetMapping({"/create","/"})
     public String BlogAddForm(Model model)
     {
         BlogModel blogModel = new BlogModel();
@@ -39,7 +39,7 @@ public class BlogFormController {
         }
         }
 
-    @RequestMapping(value = "/delete/{BlogId}",method = RequestMethod.GET)
+  @GetMapping("/delete/{BlogId}")
     public ModelAndView deletedBlog(@PathVariable("BlogId") String blogId)
     {
         ModelAndView modelAndView= new ModelAndView();
@@ -48,15 +48,14 @@ public class BlogFormController {
         modelAndView.addObject("BlogObject",blogObject);
         return  modelAndView;
     }
-    @RequestMapping(value = "/delete/Confirm",method = RequestMethod.POST)
-    public ModelAndView deletedConfirmBlog(@RequestParam("blogId") String id)
+    @PostMapping("/delete")
+    public ModelAndView deletedConfirmBlog(@ModelAttribute("BlogObject") BlogModel blogModel)
     {
 
-        String result= blogService.deleteThisBlog(Integer.parseInt(id));
         ModelAndView modelAndView= new ModelAndView();
         modelAndView.setViewName("dataDeleted");
-        modelAndView.addObject("result",result);
-        return modelAndView;
+        blogService.deleteThisBlog(blogModel.getId());
+        return  modelAndView;
     }
 
     @RequestMapping(value = "/update/{BlogId}",method = RequestMethod.GET)

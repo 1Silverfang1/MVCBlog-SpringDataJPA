@@ -1,5 +1,6 @@
 <%@ page import="JPA.Model.BlogModel" %>
 <%@ taglib prefix="input" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: root
@@ -23,9 +24,13 @@ BlogModel curBlog = (BlogModel)request.getAttribute("BlogObject");%>
 <hr>
 <p><%=curBlog.getBlogPost()%></p>
 <hr>
-<form action="./Confirm" method="post">
-    <input type="hidden" value="<%=curBlog.getId()%>" name="blogId">
-    <input type="submit" value="delete">
-</form>
+<%--@elvariable id="BlogObject" type="JPA.Model.BlogModel"--%>
+<form:form action="/JPAProjectMVC_war_exploded/post/delete/" modelAttribute="BlogObject" method="post">
+    <form:hidden path="authorName"/>
+    <form:hidden path="id"/>
+    <form:hidden path="blogPost"/>
+    <form:hidden path="blogTitle"/>
+    <input type="submit" value="Delete">
+</form:form>
 </body>
 </html>
