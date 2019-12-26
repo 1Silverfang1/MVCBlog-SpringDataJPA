@@ -1,7 +1,7 @@
-package JPA.ServiceLayer;
+package jpa.serviceLayer;
 
-import JPA.Configuration.BlogRepository;
-import JPA.Model.BlogModel;
+import jpa.configuration.BlogRepository;
+import jpa.model.BlogModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

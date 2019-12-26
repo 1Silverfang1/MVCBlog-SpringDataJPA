@@ -15,7 +15,7 @@
     ${processResult}
 </span>
 
-<%--@elvariable id="Blogger" type="JPA.Model.BlogModel"--%>
+<%--@elvariable id="Blogger" type="jpa.model.BlogModel"--%>
 <form:form action="./create" modelAttribute="Blogger" method="post" autocomplete="off">
     Author Name: <form:input path="authorName" autocomplete="false"/>
     <form:errors path="authorName" /> <br>

@@ -16,7 +16,7 @@
 <body>
  <h2>Update your Blog Here</h2>
 <%--@elvariable id="BlogObject" type="JPA.Model.BlogModel"--%>
-<form:form action="/JPAProjectMVC_war_exploded/post/updateConfirm" modelAttribute="BlogObject" method="post" >
+<form:form action="/post/updateConfirm" modelAttribute="BlogObject" method="post" >
 <form:input path="authorName"></form:input>
     <form:input path="blogTitle"></form:input>
 <%--    <form:input path="blogPost"></form:input>--%>

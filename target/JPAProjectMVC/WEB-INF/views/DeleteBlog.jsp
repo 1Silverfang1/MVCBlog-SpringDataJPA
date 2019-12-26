@@ -25,7 +25,7 @@ BlogModel curBlog = (BlogModel)request.getAttribute("BlogObject");%>
 <p><%=curBlog.getBlogPost()%></p>
 <hr>
 <%--@elvariable id="BlogObject" type="JPA.Model.BlogModel"--%>
-<form:form action="/JPAProjectMVC_war_exploded/post/delete/" modelAttribute="BlogObject" method="post">
+<form:form action="/post/delete/" modelAttribute="BlogObject" method="post">
     <form:hidden path="authorName"/>
     <form:hidden path="id"/>
     <form:hidden path="blogPost"/>

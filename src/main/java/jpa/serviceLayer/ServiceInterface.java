@@ -1,6 +1,6 @@
-package JPA.ServiceLayer;
+package jpa.serviceLayer;
 
-import JPA.Model.BlogModel;
+import jpa.model.BlogModel;
 
 import java.util.List;
 import java.util.Optional;

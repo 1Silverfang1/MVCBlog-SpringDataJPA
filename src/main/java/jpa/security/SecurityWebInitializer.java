@@ -1,4 +1,4 @@
-package JPA.Security;
+package jpa.security;
 
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 

@@ -1,11 +1,9 @@
-package JPA.Controller;
+package jpa.controller;
 
-import JPA.ServiceLayer.BlogService;
-import JPA.Model.BlogModel;
-import JPA.ServiceLayer.ServiceInterface;
+import jpa.model.BlogModel;
+import jpa.serviceLayer.ServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;

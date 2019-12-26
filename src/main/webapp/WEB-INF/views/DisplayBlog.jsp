@@ -1,4 +1,4 @@
-<%@ page import="JPA.Model.BlogModel" %><%--
+<%@ page import="jpa.model.BlogModel" %><%--
   Created by IntelliJ IDEA.
   User: root
   Date: 22/12/19

@@ -1,4 +1,4 @@
-<%@ page import="JPA.Model.BlogModel" %>
+<%@ page import="jpa.model.BlogModel" %>
 <%@ taglib prefix="input" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
@@ -24,8 +24,8 @@ BlogModel curBlog = (BlogModel)request.getAttribute("BlogObject");%>
 <hr>
 <p><%=curBlog.getBlogPost()%></p>
 <hr>
-<%--@elvariable id="BlogObject" type="JPA.Model.BlogModel"--%>
-<form:form action="/JPAProjectMVC_war_exploded/post/delete/" modelAttribute="BlogObject" method="post">
+<%--@elvariable id="BlogObject" type="jpa.model.BlogModel"--%>
+<form:form action="/post/delete/" modelAttribute="BlogObject" method="post">
     <form:hidden path="authorName"/>
     <form:hidden path="id"/>
     <form:hidden path="blogPost"/>

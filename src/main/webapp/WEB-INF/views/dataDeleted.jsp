@@ -13,7 +13,7 @@
 <body>
 <p>Data deleted</p>
 ${result}
-<a href="/JPAProjectMVC_war_exploded/post/create">Click here to add Form</a>
-<a href="/JPAProjectMVC_war_exploded/">Click here for Homepage</a>
+<a href="/post/create">Click here to add Form</a>
+<a href="/">Click here for Homepage</a>
 </body>
 </html>

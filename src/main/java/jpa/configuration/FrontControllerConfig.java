@@ -1,4 +1,4 @@
-package JPA.Configuration;
+package jpa.configuration;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
