@@ -2,17 +2,21 @@ package JPA.Controller;
 
 import JPA.ServiceLayer.BlogService;
 import JPA.Model.BlogModel;
+import JPA.ServiceLayer.ServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/post")
 public class BlogFormController {
     @Autowired
-    private BlogService blogService;
+    private ServiceInterface blogService;
     @RequestMapping(value = "/create",method = RequestMethod.GET)
     public String BlogAddForm(Model model)
     {
@@ -22,14 +26,17 @@ public class BlogFormController {
     }
 
     @RequestMapping(value  = "/create",method = RequestMethod.POST)
-    public ModelAndView processBlog ( @ModelAttribute("Blogger") BlogModel blogModel) {
+    public ModelAndView processBlog (@Valid @ModelAttribute("Blogger") BlogModel blogModel, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return new ModelAndView("addYourBlog");
+        } else {
             ModelAndView modelAndView = new ModelAndView();
-        System.out.println(blogModel);
-        String result=blogService.saveMyblog(blogModel);
-        modelAndView.setViewName("blogAdded");
-          modelAndView.addObject("processResult",result);
+            System.out.println(blogModel);
+            String result = blogService.saveMyblog(blogModel);
+            modelAndView.setViewName("blogAdded");
+            modelAndView.addObject("processResult", result);
             return modelAndView;
-
+        }
         }
 
     @RequestMapping(value = "/delete/{BlogId}",method = RequestMethod.GET)

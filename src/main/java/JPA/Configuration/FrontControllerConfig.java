@@ -7,7 +7,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRegistration;
 
-public class WebConfigInitializer implements WebApplicationInitializer {
+public class FrontControllerConfig implements WebApplicationInitializer {
     @Override
     public void onStartup(ServletContext servletContext) {
         AnnotationConfigWebApplicationContext applicationContext= new AnnotationConfigWebApplicationContext();

@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 @Entity
 //@Table(name = "BlogPost", schema = "public", catalog = "frenzy")
@@ -11,7 +13,11 @@ public class BlogModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int Id;
+    @NotNull(message = "Author name cannot be null")
+    @NotBlank
     private String authorName;
+    @NotNull(message = "BlogTitle name cannot be null")
+    @NotBlank
     private String blogTitle;
     private String Country;
 
@@ -21,7 +27,8 @@ public class BlogModel {
 
     public BlogModel() {
     }
-
+    @NotNull(message = "Post cannot be null")
+    @NotBlank
     private String blogPost;
 
     public int getId() {

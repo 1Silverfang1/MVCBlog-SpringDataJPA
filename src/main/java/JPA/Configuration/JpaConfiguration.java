@@ -42,13 +42,7 @@ public class JpaConfiguration {
 //        properties.put("hibernate.c3p0.timeout", "300"); // 5mins
         return properties;
     }
-//    @Bean
-//    public LocalEntityManagerFactoryBean entityManagerFactory(){
-//        LocalEntityManagerFactoryBean factoryBean= new LocalEntityManagerFactoryBean();
-//        factoryBean.setPersistenceUnitName("blog");
-//
-//        return factoryBean;
-//    }
+
     @Bean
     public BasicDataSource dataSource() {
         BasicDataSource basicDataSource = new BasicDataSource();

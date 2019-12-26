@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class BlogService {
+public class BlogService implements ServiceInterface {
     @Autowired
     private BlogRepository blogRepository;
     public List<BlogModel> getAllBlog()
@@ -31,8 +31,4 @@ public class BlogService {
         blogRepository.deleteById(id);
         return "Blog deleted successfully";
     }
-//    public String updateMyBlog(BlogModel blogModel){
-//        blogRepository.
-//    }
-
 }
